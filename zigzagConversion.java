@@ -46,9 +46,7 @@ public class zigzagConversion {
 					}
 					if ((j >= 1) && (j < numRows - 1)) {
 						i = i + beforeSkip + 1;
-						if ((j < numRows) && (i < numCols)) {
-							word = word + matrix[j][i];
-						}
+						word = word + matrix[j][i];
 						i = i + afterSkip - 1;
 					}
 					if (j == numRows - 1) {
@@ -57,11 +55,8 @@ public class zigzagConversion {
 						}
 					}
 				}
-				else {
-					if ((j < numRows) && (i < numCols)) {
-						word = word + matrix[j][i];
-					}
-				}
+				else 
+					word = word + matrix[j][i];
 			}
 			beforeSkip --;
 			afterSkip ++;
